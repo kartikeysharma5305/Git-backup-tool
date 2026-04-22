@@ -1,0 +1,16 @@
+[watcher]
+target_directory = "."
+debounce_ms = 2000
+recursive = true
+exclude_extensions = [".swp", ".tmp", "~", ".git"]
+max_file_size_mb = 50
+
+[git]
+commit_message_template = "[BACKUP] {event_type}: {filename} @ {timestamp}"
+branch = "main"
+
+[remote]
+enabled = false
+remote_url = ""
+push_interval_commits = 10
+push_interval_minutes = 30
